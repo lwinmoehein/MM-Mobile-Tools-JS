@@ -9,6 +9,10 @@
     "build": "tsc"
   },
   "author": "Lwin Moe Hein",
+  "repository": {
+	  "type": "git",
+	  "url": "https://github.com/lwinmoehein/MyanmarTelcoTools-Typescript"
+  },
   "license": "MIT",
   "devDependencies": {
     "@types/chai": "^4.3.9",
