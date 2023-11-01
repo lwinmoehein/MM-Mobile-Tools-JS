@@ -3,23 +3,17 @@
   "version": "1.0.2",
   "description": "",
   "main": "./lib/index.js",
-  "type":"module",
+  "type": "module",
   "scripts": {
-    "test": "mocha 'test/**/*.ts' --recursive --timeout 60000 --exit",
     "build": "tsc"
   },
   "author": "Lwin Moe Hein",
   "repository": {
-	  "type": "git",
-	  "url": "https://github.com/lwinmoehein/MyanmarTelcoTools-Typescript"
+    "type": "git",
+    "url": "https://github.com/lwinmoehein/MyanmarTelcoTools-Typescript"
   },
   "license": "MIT",
   "devDependencies": {
-    "@types/chai": "^4.3.9",
-    "@types/mocha": "^10.0.3",
-    "chai": "^4.3.10",
-    "mocha": "^10.2.0",
-    "ts-node": "^10.9.1",
     "typescript": "^5.2.2"
   }
 }
