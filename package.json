@@ -1,8 +1,8 @@
 {
   "name": "mm-telco-tools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
-  "main": "./dist/index.js",
+  "main": "./lib/index.js",
   "type":"module",
   "scripts": {
     "test": "mocha 'test/**/*.ts' --recursive --timeout 60000 --exit",
