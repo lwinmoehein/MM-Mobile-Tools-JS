@@ -1,4 +1,4 @@
-import {MMOperator,INVALID,MPT,OOREDOO,ATOM,MECTEL,MYTEL} from './MMOperator.js'
+import {type MMOperator,INVALID,MPT,OOREDOO,ATOM,MECTEL,MYTEL} from './MMOperator.js'
 import {MPT_REGXS,OOREDOO_REGXS,ATOM_REGXS,MYTEL_REGXS,MEC_TEL_REGXS} from './MMOperatorRegs.js'
 
 

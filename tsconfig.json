@@ -3,7 +3,7 @@
 		"module": "node16",
 		"target": "es2022",	
 		"strict": true,
-		"esModuleInterop": true,
+		"esModuleInterop":true,
 		"skipLibCheck": true,
 		"forceConsistentCasingInFileNames": true,
 		"outDir":"lib",
@@ -11,5 +11,5 @@
 		"declarationDir": "lib",
 	},
 	"include": ["src/**/*.ts"],       
-	"exclude": ["node_modules", "lib"]
+	"exclude": ["node_modules", "lib"],
 }
