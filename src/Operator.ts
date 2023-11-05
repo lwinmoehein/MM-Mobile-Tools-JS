@@ -24,32 +24,11 @@ export const MYTEL_REGXS: RegExp[] = [
 ];
 
 
-export interface Operator {
-    name: string;
-};
-
-export const INVALID:Operator = {
-    name:"INVALID",
-};
-
-export const MPT:Operator = {
-    name:"MPT",
-};
-
-export const OOREDOO:Operator = {
-    name:"Ooredoo",
-};
-
-export const ATOM:Operator = {
-    name:"ATOM",
-};
-
-export const MECTEL:Operator = {
-    name:"MECTel",
-};
-
-export const MYTEL:Operator = {
-    name:"Mytel",
-};
-
-
+export enum Operator {
+	MPT,
+	ATOM,
+	OOREDOO,
+	MECTEL,
+	MYTEL,
+	INVALID
+}

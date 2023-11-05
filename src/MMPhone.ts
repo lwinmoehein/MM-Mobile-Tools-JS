@@ -1,4 +1,4 @@
-import { type Operator,INVALID,MPT,OOREDOO,ATOM,MECTEL,MYTEL } from './Operator.js';
+import { Operator } from './Operator.js';
 import { MPT_REGXS,OOREDOO_REGXS,ATOM_REGXS,MYTEL_REGXS,MEC_TEL_REGXS } from './Operator.js';
 
 
@@ -14,21 +14,21 @@ function doesStringMatchAnyRegex(inputString: string, regexArray: RegExp[]): boo
 export default class MMPhone {
 
 	isValidPhone(phoneNumber:string):boolean{
-		return this.getOperator(phoneNumber)!==INVALID;
+		return this.getOperator(phoneNumber)!==Operator.INVALID;
 	}
 
 	getOperator(phoneNumber:string):Operator{
-		if (doesStringMatchAnyRegex(phoneNumber, MPT_REGXS)) return MPT;
+		if (doesStringMatchAnyRegex(phoneNumber, MPT_REGXS)) return Operator.MPT;
 
-       		if (doesStringMatchAnyRegex(phoneNumber, OOREDOO_REGXS)) return OOREDOO;
+       		if (doesStringMatchAnyRegex(phoneNumber, OOREDOO_REGXS)) return Operator.OOREDOO;
 
-        	if (doesStringMatchAnyRegex(phoneNumber, ATOM_REGXS)) return ATOM; 
+        	if (doesStringMatchAnyRegex(phoneNumber, ATOM_REGXS)) return Operator.ATOM; 
 
-        	if (doesStringMatchAnyRegex(phoneNumber, MEC_TEL_REGXS)) return MECTEL;
+        	if (doesStringMatchAnyRegex(phoneNumber, MEC_TEL_REGXS)) return Operator.MECTEL;
 
-        	if (doesStringMatchAnyRegex(phoneNumber, MYTEL_REGXS)) return MYTEL;
+        	if (doesStringMatchAnyRegex(phoneNumber, MYTEL_REGXS)) return Operator.MYTEL;
 
-        	return INVALID;
+        	return Operator.INVALID;
 	}
 }
 
