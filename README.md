@@ -1,1 +1,1 @@
-# MyanmarTelcoTools-Typescript
+# MM-Phone-Typescript
