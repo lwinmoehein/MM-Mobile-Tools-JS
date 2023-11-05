@@ -1,6 +1,6 @@
 {
-  "name": "myanmar-phone",
-  "version": "2.0.0",
+  "name": "mm-mobile-tools",
+  "version": "1.0.0",
   "description": "A javascript library for working with myanmar phone numbers",
   "main": "./lib/index.js",
   "types":"./lib/index.d.ts",
@@ -12,7 +12,7 @@
   "author": "Lwin Moe Hein",
   "repository": {
     "type": "git",
-    "url": "https://github.com/lwinmoehein/MyanmarTelcoTools-Typescript"
+    "url": "https://github.com/lwinmoehein/MM-Mobile-Tools-JS"
   },
   "license": "MIT",
   "devDependencies": {

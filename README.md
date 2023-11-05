@@ -1,16 +1,16 @@
 <h1 align="center">
-   Myanmar Phone - Typescript
+   MM Mobile Tools - Typescript
 </h1>
 
 <p align="center">A npm package for working with Myanmar phone numbers</p>
 
 <div align="center">
 
-[![npm version](https://img.shields.io/npm/v/myanmar-phone.svg?style=flat-square)](https://www.npmjs.org/package/mm-phone)
+[![npm version](https://img.shields.io/npm/v/mm-mobile-tools.svg?style=flat-square)](https://www.npmjs.org/package/mm-phone)
 
-[![Build status](https://img.shields.io/github/actions/workflow/status/lwinmoehein/myanmar-phone-typescript/npm-publish.yml?branch=main&label=CI&logo=github&style=flat-square)](https://github.com/lwinmoehein/mm-phone-typescript/actions/workflows/npm-publish.yml)
-[![code coverage](https://img.shields.io/coveralls/mzabriskie/axios.svg?style=flat-square)](https://coveralls.io/r/lwinmoehein/myanmar-phone)
-[![npm downloads](https://img.shields.io/npm/dm/myanmar-phone.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-phone)
+[![Build status](https://img.shields.io/github/actions/workflow/status/lwinmoehein/mm-mobile-tools-typescript/npm-publish.yml?branch=main&label=CI&logo=github&style=flat-square)](https://github.com/lwinmoehein/mm-phone-typescript/actions/workflows/npm-publish.yml)
+[![code coverage](https://img.shields.io/coveralls/mzabriskie/axios.svg?style=flat-square)](https://coveralls.io/r/lwinmoehein/mm-mobile-tools)
+[![npm downloads](https://img.shields.io/npm/dm/mm-mobile-tools.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-phone)
 
 </div>
 
@@ -19,8 +19,8 @@
   - [Features](#features)
   - [Installing](#installing)
     - [Package manager](#package-manager)
+  - [Examples](#examples)
   - [License](#license)
-
 ## Features
 
 - Check if a phone number is a valid local ( Myanmar ) phone number 
@@ -32,24 +32,29 @@
 
 Using npm:
 
-```bash
-$ npm install myanmar-phone
-```
-
-Once the package is installed, you can import the library using `import` or `require` approach:
+Once the package is installed, you can import the library using `import`: 
 
 ```js
-import mmphone from 'myanmar-phone';
-
-console.log(mmphone.isValidPhone('09440813533')); //true
+import mmphone from 'mm-mobile-tools';
 ```
 
-If you want to use `require` for importing,
+## Examples
+
+### Check if phone number is valid
 
 ```js
-const mmphone = require('myanmar-phone');
+import mmphone from 'mm-mobile-tools';
 
-console.log(mmphone.isValidPhone('09440813533')); //true
+console.log(mmphone.isValidPhone("09440813577")); 
+```
+### Get operator
+
+```js
+import mmphone,{ MPT } from 'mm-mobile-tools';
+
+if(mmphone.getOperator("09440813577")===MPT){
+    console.log("Phone number is MPT"); 
+}
 ```
 
 
