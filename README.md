@@ -6,11 +6,11 @@
 
 <div align="center">
 
-[![npm version](https://img.shields.io/npm/v/mm-mobile-tools.svg?style=flat-square)](https://www.npmjs.org/package/mm-phone)
+[![npm version](https://img.shields.io/npm/v/mm-mobile-tools.svg?style=flat-square)](https://www.npmjs.org/package/mm-mobile-tools)
 
-[![Build status](https://img.shields.io/github/actions/workflow/status/lwinmoehein/mm-mobile-tools-typescript/npm-publish.yml?branch=main&label=CI&logo=github&style=flat-square)](https://github.com/lwinmoehein/mm-phone-typescript/actions/workflows/npm-publish.yml)
-[![code coverage](https://img.shields.io/coveralls/mzabriskie/axios.svg?style=flat-square)](https://coveralls.io/r/lwinmoehein/mm-mobile-tools)
-[![npm downloads](https://img.shields.io/npm/dm/mm-mobile-tools.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-phone)
+[![Build status](https://img.shields.io/github/actions/workflow/status/lwinmoehein/MM-Mobiile-Tools-JS/npm-publish.yml?branch=main&label=CI&logo=github&style=flat-square)](https://github.com/lwinmoehein/MM-Mobiile-Tools-JS/actions/workflows/npm-publish.yml)
+[![code coverage](https://img.shields.io/coveralls/mzabriskie/mm-mobile-tools.svg?style=flat-square)](https://coveralls.io/r/lwinmoehein/mm-mobile-tools)
+[![npm downloads](https://img.shields.io/npm/dm/mm-mobile-tools.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-mobile-tools)
 
 </div>
 
@@ -50,9 +50,9 @@ console.log(mmphone.isValidPhone("09440813577"));
 ### Get operator
 
 ```js
-import mmphone,{ MPT } from 'mm-mobile-tools';
+import mmphone,{ Operator } from 'mm-mobile-tools';
 
-if(mmphone.getOperator("09440813577")===MPT){
+if(mmphone.getOperator("09440813577")===Operator.MPT){
     console.log("Phone number is MPT"); 
 }
 ```
