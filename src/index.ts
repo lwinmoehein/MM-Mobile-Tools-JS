@@ -1,2 +1,5 @@
-export {type MMOperator,INVALID,MPT,OOREDOO,ATOM,MYTEL,MECTEL } from './MMOperator.js'
-export { isValidPhone,getOperator } from './MMPhoneValidator.js'
+import MMPhone from './MMPhone.js';
+
+const mmphone = new MMPhone();
+
+export default mmphone;
