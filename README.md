@@ -1,5 +1,5 @@
 <h1 align="center">
-   MM Phone - Typescript
+   Myanmar Phone - Typescript
 </h1>
 
 <p align="center">A npm package for working with Myanmar phone numbers</p>
