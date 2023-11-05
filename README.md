@@ -10,7 +10,7 @@
 
 [![Build status](https://img.shields.io/github/actions/workflow/status/lwinmoehein/mm-phone-typescript/npm-publish.yml?branch=main&label=CI&logo=github&style=flat-square)](https://github.com/lwinmoehein/mm-phone-typescript/actions/workflows/npm-publish.yml)
 [![code coverage](https://img.shields.io/coveralls/mzabriskie/axios.svg?style=flat-square)](https://coveralls.io/r/lwinmoehein/mm-phone)
-[![npm downloads](https://img.shields.io/npm/dm/axios.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-phone)
+[![npm downloads](https://img.shields.io/npm/dm/mm-phone.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-phone)
 
 </div>
 
