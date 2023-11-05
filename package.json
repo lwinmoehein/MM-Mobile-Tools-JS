@@ -1,6 +1,6 @@
 {
   "name": "myanmar-phone",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "A javascript library for working with myanmar phone numbers",
   "main": "./lib/index.js",
   "types":"./lib/index.d.ts",
