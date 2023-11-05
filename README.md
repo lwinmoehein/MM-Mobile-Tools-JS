@@ -6,11 +6,11 @@
 
 <div align="center">
 
-[![npm version](https://img.shields.io/npm/v/mm-phone.svg?style=flat-square)](https://www.npmjs.org/package/mm-phone)
+[![npm version](https://img.shields.io/npm/v/myanmar-phone.svg?style=flat-square)](https://www.npmjs.org/package/mm-phone)
 
-[![Build status](https://img.shields.io/github/actions/workflow/status/lwinmoehein/mm-phone-typescript/npm-publish.yml?branch=main&label=CI&logo=github&style=flat-square)](https://github.com/lwinmoehein/mm-phone-typescript/actions/workflows/npm-publish.yml)
-[![code coverage](https://img.shields.io/coveralls/mzabriskie/axios.svg?style=flat-square)](https://coveralls.io/r/lwinmoehein/mm-phone)
-[![npm downloads](https://img.shields.io/npm/dm/mm-phone.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-phone)
+[![Build status](https://img.shields.io/github/actions/workflow/status/lwinmoehein/myanmar-phone-typescript/npm-publish.yml?branch=main&label=CI&logo=github&style=flat-square)](https://github.com/lwinmoehein/mm-phone-typescript/actions/workflows/npm-publish.yml)
+[![code coverage](https://img.shields.io/coveralls/mzabriskie/axios.svg?style=flat-square)](https://coveralls.io/r/lwinmoehein/myanmar-phone)
+[![npm downloads](https://img.shields.io/npm/dm/myanmar-phone.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-phone)
 
 </div>
 
@@ -33,13 +33,13 @@
 Using npm:
 
 ```bash
-$ npm install mm-phone
+$ npm install myanmar-phone
 ```
 
 Once the package is installed, you can import the library using `import` or `require` approach:
 
 ```js
-import mmphone from 'mm-phone';
+import mmphone from 'myanmar-phone';
 
 console.log(mmphone.isValidPhone('09440813533')); //true
 ```
@@ -47,7 +47,7 @@ console.log(mmphone.isValidPhone('09440813533')); //true
 If you want to use `require` for importing,
 
 ```js
-const mmphone = require('mm-phone');
+const mmphone = require('myanmar-phone');
 
 console.log(mmphone.isValidPhone('09440813533')); //true
 ```
