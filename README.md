@@ -1,5 +1,5 @@
 <h1 align="center">
-   MM Mobile Tools - Typescript
+   MM Mobile Tools - Javascript
 </h1>
 
 <p align="center">A npm package for working with Myanmar phone numbers</p>
@@ -7,8 +7,7 @@
 <div align="center">
 
 [![npm version](https://img.shields.io/npm/v/mm-mobile-tools.svg?style=flat-square)](https://www.npmjs.org/package/mm-mobile-tools)
-
-[![Build status](https://img.shields.io/github/actions/workflow/status/lwinmoehein/MM-Mobiile-Tools-JS/npm-publish.yml?branch=main&label=CI&logo=github&style=flat-square)](https://github.com/lwinmoehein/MM-Mobiile-Tools-JS/actions/workflows/npm-publish.yml)
+![Build status](https://github.com/lwinmoehein/MM-Mobiile-Tools-JS/actions/workflows/ci.yml/badge.svg)
 [![code coverage](https://img.shields.io/coveralls/mzabriskie/mm-mobile-tools.svg?style=flat-square)](https://coveralls.io/r/lwinmoehein/mm-mobile-tools)
 [![npm downloads](https://img.shields.io/npm/dm/mm-mobile-tools.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-mobile-tools)
 
