@@ -7,7 +7,7 @@
 <div align="center">
 
 [![npm version](https://img.shields.io/npm/v/mm-mobile-tools.svg?style=flat-square)](https://www.npmjs.org/package/mm-mobile-tools)
-![Build status](https://github.com/lwinmoehein/MM-Mobiile-Tools-JS/actions/workflows/cd.yml/badge.svg)
+![Build status](https://github.com/lwinmoehein/MM-Mobiile-Tools-JS/actions/workflows/ci.yml/badge.svg)
 [![codecov](https://codecov.io/gh/lwinmoehein/MM-Mobile-Tools-JS/graph/badge.svg?token=YVS9A98YJQ)](https://codecov.io/gh/lwinmoehein/MM-Mobile-Tools-JS)
 [![npm downloads](https://img.shields.io/npm/dm/mm-mobile-tools.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-mobile-tools)
 
