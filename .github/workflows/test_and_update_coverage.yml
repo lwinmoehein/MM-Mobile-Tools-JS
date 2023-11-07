@@ -1,0 +1,62 @@
+name: Test and Report Coverage
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14
+
+      - name: Install dependencies
+        run: npm install
+
+      - name: Run tests and collect coverage
+        run: npm test -- --coverage
+
+      - name: Publish coverage report
+        uses: actions/upload-artifact@v2
+        with:
+          name: coverage
+          path: coverage
+
+  update-readme:
+    needs: test
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Download coverage artifact
+        uses: actions/download-artifact@v2
+        with:
+          name: coverage
+          path: coverage
+
+      - name: Calculate coverage percentage
+        run: |
+          const coveragePath = './coverage/lcov-report/index.html';
+          const coverage = require('fs')
+            .readFileSync(coveragePath, 'utf8')
+            .match(/data-cov="(\d+\.\d+)"/)[1];
+          console.log(`Coverage: ${coverage}%`);
+          core.setOutput('coverage', coverage);
+        shell: node
+
+      - name: Update README
+        run: |
+          echo "::set-output name=coverage::${{ steps.calculate-coverage.outputs.coverage }}"
+          sed -i 's/{coverage-badge-placeholder}/![Coverage](https:\/\/img.shields.io\/badge\/Coverage-${{ steps.calculate-coverage.outputs.coverage }}%25-brightgreen)/' README.md
+        shell: bash
+
