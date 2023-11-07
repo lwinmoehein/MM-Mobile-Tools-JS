@@ -22,7 +22,7 @@
   - [License](#license)
 ## Features
 
-- Check if a phone number is a valid local ( Myanmar ) phone number 
+- Check if a phone number is a valid Myanmar phone number 
 - Get the operator from a phone number
 
 ## Installing
@@ -30,6 +30,10 @@
 ### Package manager
 
 Using npm:
+
+```bash
+$ npm install mm-mobile-tools 
+```
 
 Once the package is installed, you can import the library using `import`: 
 
@@ -44,7 +48,7 @@ import mmphone from 'mm-mobile-tools';
 ```js
 import mmphone from 'mm-mobile-tools';
 
-console.log(mmphone.isValidPhone("09440813577")); 
+console.log(mmphone.isValid("09440813577")); 
 ```
 ### Get operator
 

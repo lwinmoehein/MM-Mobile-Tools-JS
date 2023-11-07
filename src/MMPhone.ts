@@ -13,7 +13,7 @@ function doesStringMatchAnyRegex(inputString: string, regexArray: RegExp[]): boo
 
 export default class MMPhone {
 
-	isValidPhone(phoneNumber:string):boolean{
+	isValid(phoneNumber:string):boolean{
 		return this.getOperator(phoneNumber)!==Operator.INVALID;
 	}
 
