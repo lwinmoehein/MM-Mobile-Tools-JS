@@ -17,4 +17,8 @@ describe('Phone Number validation checks', () => {
 	test('Should return true for valid MECTel phone number', () => {
 		expect(mmphone.getOperator("09301173991")).toBe(Operator.MECTEL);
 	});
+	test('Should return true  for invalid phone number', () => {
+		expect(mmphone.getOperator("0911223344881")).toBe(Operator.INVALID);
+	});
+
 });
