@@ -46,17 +46,12 @@ jobs:
 
       - name: Calculate coverage percentage
         run: |
-          const coveragePath = './coverage/lcov-report/index.html';
-          const coverage = require('fs')
-            .readFileSync(coveragePath, 'utf8')
-            .match(/data-cov="(\d+\.\d+)"/)[1];
-          console.log(`Coverage: ${coverage}%`);
-          core.setOutput('coverage', coverage);
-        shell: node
+          coverage=$(grep -oP "(?<=<span class='strong'>)[\d.]+(?=%<\/span>)" coverage/lcov-report/index.html)
+          echo "Coverage: $coverage%"
+          echo "::set-output name=coverage::$coverage"
+        shell: bash
 
       - name: Update README
         run: |
-          echo "::set-output name=coverage::${{ steps.calculate-coverage.outputs.coverage }}"
-          sed -i 's/{coverage-badge-placeholder}/![Coverage](https:\/\/img.shields.io\/badge\/Coverage-${{ steps.calculate-coverage.outputs.coverage }}%25-brightgreen)/' README.md
-        shell: bash
+          sed -i "s/{coverage-badge-placeholder}/![Coverage](https:\/\/img.shields.io\/badge\/Coverage-${{ needs.test.outputs.coverage }}%25-brightgreen)/" README.md
 
