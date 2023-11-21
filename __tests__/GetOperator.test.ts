@@ -6,13 +6,13 @@ describe('Phone Number validation checks', () => {
 		expect(mmphone.getOperator("09440813588")).toBe(Operator.MPT);
 	});
 	test('Should return true for valid ATOM phone number', () => {
-		expect(mmphone.getOperator("09741173991")).toBe(Operator.ATOM);
+		expect(mmphone.getOperator("097411739911")).toBe(Operator.ATOM);
 	});
 	test('Should return true for valid Ooredoo phone number', () => {
-		expect(mmphone.getOperator("09941173991")).toBe(Operator.OOREDOO);
+		expect(mmphone.getOperator("099411739911")).toBe(Operator.OOREDOO);
 	});
 	test('Should return true for valid Mytel phone number', () => {
-		expect(mmphone.getOperator("09661173991")).toBe(Operator.MYTEL);
+		expect(mmphone.getOperator("096611739911")).toBe(Operator.MYTEL);
 	});
 	test('Should return true for valid MECTel phone number', () => {
 		expect(mmphone.getOperator("09301173991")).toBe(Operator.MECTEL);
