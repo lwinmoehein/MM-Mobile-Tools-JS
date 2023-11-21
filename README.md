@@ -64,11 +64,11 @@ if(mmphone.getOperator("09440813577")===Operator.MPT){
 
 ### Operator types
 
-MPT = Operator.MPT
-Ooredoo = Operator.OOREDOO
-ATOM = Operator.ATOM
-MECTel = Operator.MECTEL
-MyTel = Operator.MYTEL
+- MPT = Operator.MPT
+- Ooredoo = Operator.OOREDOO
+- ATOM = Operator.ATOM
+- MECTel = Operator.MECTEL
+- MyTel = Operator.MYTEL
 
 ## License
 
