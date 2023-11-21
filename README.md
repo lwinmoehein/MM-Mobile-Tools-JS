@@ -6,10 +6,10 @@
 
 <div align="center">
 
-[![npm version](https://img.shields.io/npm/v/mm-mobile-tools.svg?style=flat-square)](https://www.npmjs.org/package/mm-mobile-tools)
+[![npm version](https://img.shields.io/npm/v/mm-mobile-tool.svg?style=flat-square)](https://www.npmjs.org/package/mm-mobile-tool)
 ![Build status](https://github.com/lwinmoehein/MM-Mobiile-Tools-JS/actions/workflows/ci.yml/badge.svg)
 [![codecov](https://codecov.io/gh/lwinmoehein/MM-Mobile-Tools-JS/graph/badge.svg?token=YVS9A98YJQ)](https://codecov.io/gh/lwinmoehein/MM-Mobile-Tools-JS)
-[![npm downloads](https://img.shields.io/npm/dm/mm-mobile-tools.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-mobile-tools)
+[![npm downloads](https://img.shields.io/npm/dm/mm-mobile-tool.svg?style=flat-square)](https://npm-stat.com/charts.html?package=mm-mobile-tool)
 
 </div>
 
@@ -32,13 +32,13 @@
 Using npm:
 
 ```bash
-$ npm install mm-mobile-tools 
+$ npm install mm-mobile-tool 
 ```
 
 Once the package is installed, you can import the library using `import`: 
 
 ```js
-import mmphone from 'mm-mobile-tools';
+import mmphone from 'mm-mobile-tool';
 ```
 
 ## Examples
@@ -46,20 +46,29 @@ import mmphone from 'mm-mobile-tools';
 ### Check if phone number is valid
 
 ```js
-import mmphone from 'mm-mobile-tools';
+import mmphone from 'mm-mobile-tool';
 
-console.log(mmphone.isValid("09440813577")); 
+if(mmphone.isValid("09440813577")){
+    console.log("Phone number is valid");
+}
 ```
 ### Get operator
 
 ```js
-import mmphone,{ Operator } from 'mm-mobile-tools';
+import mmphone,{ Operator } from 'mm-mobile-tool';
 
 if(mmphone.getOperator("09440813577")===Operator.MPT){
     console.log("Phone number is MPT"); 
 }
 ```
 
+### Operator types
+
+MPT = Operator.MPT
+Ooredoo = Operator.OOREDOO
+ATOM = Operator.ATOM
+MECTel = Operator.MECTEL
+MyTel = Operator.MYTEL
 
 ## License
 
