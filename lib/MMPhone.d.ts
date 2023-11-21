@@ -1,5 +1,5 @@
 import { Operator } from './Operator.js';
 export default class MMPhone {
-    isValidPhone(phoneNumber: string): boolean;
+    isValid(phoneNumber: string): boolean;
     getOperator(phoneNumber: string): Operator;
 }
