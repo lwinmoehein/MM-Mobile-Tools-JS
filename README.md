@@ -13,6 +13,8 @@
 
 </div>
 
+> currently only supports ES modules
+
 ## Table of Contents
 
   - [Features](#features)
